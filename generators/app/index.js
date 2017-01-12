@@ -27,6 +27,10 @@ module.exports = Generator.extend({
     this.spawnCommandSync('yarn', ['init']);
 
     this.fs.copy(
+      this.templatePath('.gitkeep'),
+      this.destinationPath('dist/.gitkeep')
+    );
+    this.fs.copy(
       this.templatePath('dummyfile.txt'),
       this.destinationPath('dummyfile.txt')
     );
