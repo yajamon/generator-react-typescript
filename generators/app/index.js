@@ -33,6 +33,13 @@ module.exports = Generator.extend({
   },
 
   install: function () {
-    this.installDependencies();
+    this.yarnInstall(['webpack', 'typescript', 'awesome-typescript-loader', 'source-map-loader'], { 'dev' : true });
+    this.yarnInstall(['react', '@types/react', 'react-dom', '@types/react-dom']);
+
+    this.installDependencies({
+      npm: false,
+      bower: false,
+      yarn: true
+    });
   }
 });
