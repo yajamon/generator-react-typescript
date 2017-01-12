@@ -24,6 +24,8 @@ module.exports = Generator.extend({
   },
 
   writing: function () {
+    this.spawnCommandSync('yarn', ['init']);
+
     this.fs.copy(
       this.templatePath('dummyfile.txt'),
       this.destinationPath('dummyfile.txt')
