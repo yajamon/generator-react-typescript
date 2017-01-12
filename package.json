@@ -1,6 +1,6 @@
 {
   "name": "@yajamon/generator-react-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "my yeoman generator. react with typescript.",
   "homepage": "https://github.com/yajamon/generator-react-typescript#readme",
   "author": "yajamon <yajamon.tatsuki@gmail.com>",
