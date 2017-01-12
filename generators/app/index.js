@@ -38,6 +38,10 @@ module.exports = Generator.extend({
       this.templatePath('index.html'),
       this.destinationPath('index.html')
     );
+    this.fs.copy(
+      this.templatePath('tsconfig.json'),
+      this.destinationPath('tsconfig.json')
+    );
   },
 
   install: function () {
