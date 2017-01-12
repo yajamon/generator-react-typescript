@@ -31,8 +31,8 @@ module.exports = Generator.extend({
       this.destinationPath('dist/.gitkeep')
     );
     this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
+      this.templatePath('src'),
+      this.destinationPath('src')
     );
   },
 
