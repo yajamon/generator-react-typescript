@@ -34,6 +34,10 @@ module.exports = Generator.extend({
       this.templatePath('src'),
       this.destinationPath('src')
     );
+    this.fs.copy(
+      this.templatePath('index.html'),
+      this.destinationPath('index.html')
+    );
   },
 
   install: function () {
