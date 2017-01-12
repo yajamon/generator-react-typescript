@@ -42,6 +42,10 @@ module.exports = Generator.extend({
       this.templatePath('tsconfig.json'),
       this.destinationPath('tsconfig.json')
     );
+    this.fs.copy(
+      this.templatePath('webpack.config.js'),
+      this.destinationPath('webpack.config.js')
+    );
   },
 
   install: function () {
